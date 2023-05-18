@@ -1,21 +1,19 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Banner from '../../components/Banner/Banner';
-import Footer from '../../components/Footer/Footer';
-import Category from '../../components/Category/Category';
-import Gallery from '../../components/Gallery/Gallery';
+import React from "react";
+
+import Banner from "../../components/Banner/Banner";
+
+import Category from "../../components/Category/Category";
+import Gallery from "../../components/Gallery/Gallery";
 
 const HomePage = () => {
-    return (
-        <div>
-            <Navbar />
-            <Banner />
-            <Category />
-            <Gallery />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Banner />
+      <Category />
+      <Gallery />
+    </div>
+  );
 };
 
 export default HomePage;

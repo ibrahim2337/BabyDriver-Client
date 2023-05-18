@@ -9,9 +9,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menus = [
     { name: "Home", link: "/home" },
-    { name: "About", link: "/about" },
     { name: "Products", link: "/products" },
     { name: "Contact", link: "/contact" },
+    { name: "Blog", link: "/blogs" },
   ];
   return (
     <div className=" shadow-md w-full fixed top-0 z-10">

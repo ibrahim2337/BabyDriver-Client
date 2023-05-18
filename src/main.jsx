@@ -9,6 +9,8 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import HomePage from './pages/HomePage/HomePage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import ProductsPage from './pages/ProductsPage/ProductsPage';
+import Blogs from './components/Blogs/Blogs';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path:"/products",
         element:<ProductsPage />,
+      },
+      {
+        path:"/contact",
+        element:<Contact />,
+      },
+      {
+        path:"/blogs",
+        element:<Blogs />,
       },
       {
         path:"/login",
