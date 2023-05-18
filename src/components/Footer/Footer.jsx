@@ -13,7 +13,7 @@ const Footer = () => {
               title="Company"
               className="inline-flex items-center"
             >
-              <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+              <span className="text-2xl font-bold tracking-wide text-white uppercase">
                 Company
               </span>
             </a>

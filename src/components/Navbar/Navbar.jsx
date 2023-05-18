@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
   return (
     <div className=" shadow-md w-full fixed top-0 z-10">
-      <div className="flex items-center justify-between bg-gray-300 py-4 md:px-10 px-7">
+      <div className="flex items-center justify-between bg-gray-300 py-4 md:px-10 px-7 ">
         <Link to={"/"}>
           <h1 className="text-2xl font-bold">MUM</h1>
         </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
             isOpen && "h-screen flex items-center justify-center mt-[-5rem]"
           }`}
         >
-          <div className="md:flex md:items-center space-y-7 md:space-y-0 md:space-x-5">
+          <div className="md:flex md:items-center space-y-7 md:space-y-0 md:space-x-5 ">
             {menus.map((menu) => (
               <li key={menu.name} className="text-xl md:my-0 my-7">
                 <Link
