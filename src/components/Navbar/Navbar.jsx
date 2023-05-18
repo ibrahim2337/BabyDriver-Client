@@ -59,7 +59,7 @@ const Navbar = () => {
 
             <Link
               to="/login"
-              className="text-xl px-6 py-1 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-gray-600 to-gray-400 "
+              className="text-xl px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-gray-600 to-gray-400 "
             >
               login
             </Link>
