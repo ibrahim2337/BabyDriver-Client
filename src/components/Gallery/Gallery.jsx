@@ -9,7 +9,7 @@ const Gallery = () => {
       </h1>
       <div>
         
-        <div className="grid grid-cols-1 gap-6  lg:grid-cols-5 sm:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6  lg:grid-cols-5 md:grid-cols-2">
           <img
             className="object-cover w-full  rounded-xl"
             src="https://source.unsplash.com/random/300x300/?1"
@@ -32,7 +32,7 @@ const Gallery = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-6 mt-6 lg:grid-cols-5 sm:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6 mt-6 lg:grid-cols-5 md:grid-cols-2">
           <img
             className="object-cover w-full  rounded-xl"
             src="https://source.unsplash.com/random/300x300/?1"

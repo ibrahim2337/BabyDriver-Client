@@ -1,15 +1,16 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
 
 const Blogs = () => {
   return (
     <div>
-      <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-        <h2 className="mt-24 mb-12 text-4xl font-bold leading-none text-center sm:text-5xl uppercase">
+      <div className="container flex flex-col justify-center p-4  mx-auto md:p-8">
+        <h2 className="mt-20 lg:mt-28 mb-16 text-4xl font-bold leading-none text-center sm:text-5xl uppercase">
           Some Important Questions
         </h2>
         <div className="grid gap-10 md:gap-8 sm:p-3 md:grid-cols-2 lg:px-12 xl:px-32">
-          <div>
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
             <h3 className="font-bold text-lg">
               What is an access token and refresh token? How do they work and
               where should we store them on the client-side?
@@ -19,7 +20,7 @@ const Blogs = () => {
             SQL and NoSQL databases are primarily server-side components, so they are not typically stored directly on the client-side. However, client-side applications may need to store small amounts of data locally for caching, session management, or offline usage. Here are some common approaches for client-side storage.
             </p>
           </div>
-          <div>
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
             <h3 className="font-bold text-lg">
               Compare SQL and NoSQL databases?
             </h3>
@@ -38,7 +39,7 @@ const Blogs = () => {
               databases do not use tables to store data.
             </p>
           </div>
-          <div>
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
             <h3 className="font-bold text-lg">
               What is express js? What is Nest JS?
             </h3>
@@ -56,7 +57,7 @@ const Blogs = () => {
               WebSockets, and more.
             </p>
           </div>
-          <div>
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
             <h3 className="font-bold text-lg">
               What is MongoDB aggregate and how does it work?
             </h3>
