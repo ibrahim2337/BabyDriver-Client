@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Banner from '../../components/Banner/Banner';
 import Footer from '../../components/Footer/Footer';
 import Category from '../../components/Category/Category';
+import Gallery from '../../components/Gallery/Gallery';
 
 const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ const HomePage = () => {
             <Navbar />
             <Banner />
             <Category />
+            <Gallery />
             <Footer />
         </div>
     );
