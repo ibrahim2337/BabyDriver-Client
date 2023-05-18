@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className=" ">
-     
-      <div className="container px-10 py-10  mx-auto mt-20 lg:mt-28">
+    <div>
+ <div className="container px-10 py-10  mx-auto mt-20 lg:mt-28">
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
