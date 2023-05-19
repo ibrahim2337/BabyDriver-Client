@@ -14,7 +14,7 @@ const Contact = () => {
               <img
                 alt=""
                 className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full "
-                src="https://source.unsplash.com/100x100/?portrait?0"
+                src="https://i.ibb.co/8gCDYnY/image-1.jpg"
               />
               <div className="flex-1 my-4">
                 <p className="text-xl font-semibold leading-snug">
@@ -90,7 +90,7 @@ const Contact = () => {
               <img
                 alt=""
                 className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full "
-                src="https://source.unsplash.com/100x100/?portrait?1"
+                src="https://i.ibb.co/zR4H0BH/image-2.jpg"
               />
               <div className="flex-1 my-4">
                 <p className="text-xl font-semibold leading-snug">
@@ -166,7 +166,7 @@ const Contact = () => {
               <img
                 alt=""
                 className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full "
-                src="https://source.unsplash.com/100x100/?portrait?2"
+                src="https://i.ibb.co/fdwLcNb/image-3.jpg"
               />
               <div className="flex-1 my-4">
                 <p className="text-xl font-semibold leading-snug">
@@ -242,7 +242,7 @@ const Contact = () => {
               <img
                 alt=""
                 className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full "
-                src="https://source.unsplash.com/100x100/?portrait?3"
+                src="https://i.ibb.co/J74Wdpz/image-4.jpg"
               />
               <div className="flex-1 my-4">
                 <p className="text-xl font-semibold leading-snug">

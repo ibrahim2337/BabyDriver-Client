@@ -10,7 +10,7 @@ const Blogs = () => {
           Some Important Questions
         </h2>
         <div className="grid gap-10 md:gap-8 sm:p-3 md:grid-cols-2 lg:px-12 xl:px-32">
-          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-95 lg:hover:scale-105">
             <h3 className="font-bold text-lg">
               What is an access token and refresh token? How do they work and
               where should we store them on the client-side?
@@ -20,7 +20,7 @@ const Blogs = () => {
             SQL and NoSQL databases are primarily server-side components, so they are not typically stored directly on the client-side. However, client-side applications may need to store small amounts of data locally for caching, session management, or offline usage. Here are some common approaches for client-side storage.
             </p>
           </div>
-          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-95 lg:hover:scale-105">
             <h3 className="font-bold text-lg">
               Compare SQL and NoSQL databases?
             </h3>
@@ -39,7 +39,7 @@ const Blogs = () => {
               databases do not use tables to store data.
             </p>
           </div>
-          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-95 lg:hover:scale-105">
             <h3 className="font-bold text-lg">
               What is express js? What is Nest JS?
             </h3>
@@ -57,7 +57,7 @@ const Blogs = () => {
               WebSockets, and more.
             </p>
           </div>
-          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-105">
+          <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-95 lg:hover:scale-105">
             <h3 className="font-bold text-lg">
               What is MongoDB aggregate and how does it work?
             </h3>

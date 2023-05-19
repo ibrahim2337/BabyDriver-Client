@@ -29,7 +29,7 @@ const Banner = () => {
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
             <img
               className="w-full h-full lg:max-w-3xl"
-              src="https://merakiui.com/images/components/Catalogue-pana.svg"
+              src="https://i.ibb.co/D9RCm7p/bannar-removebg-preview.png"
               alt="Catalogue-pana.svg"
             />
           </div>
