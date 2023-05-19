@@ -28,6 +28,18 @@ const RegisterPage = () => {
               />
             </div>
             <div>
+              <label htmlFor="photo" className="block mb-2 text-sm">
+                Photo Link
+              </label>
+              <input
+                type="photo"
+                name="photo"
+                id="photo"
+                placeholder="Photo Link"
+                className="w-full px-3 py-2 border rounded-md border-gray-700 bg-secondary text-neutral"
+              />
+            </div>
+            <div>
               <label htmlFor="email" className="block mb-2 text-sm">
                 Email address 
               </label>
@@ -70,18 +82,7 @@ const RegisterPage = () => {
                 required
               />
             </div>
-            <div>
-              <label htmlFor="photo" className="block mb-2 text-sm">
-                Photo Link
-              </label>
-              <input
-                type="photo"
-                name="photo"
-                id="photo"
-                placeholder="Photo Link"
-                className="w-full px-3 py-2 border rounded-md border-gray-700 bg-secondary text-neutral"
-              />
-            </div>
+           
           </div>
           <small>
             <p className="text-error mt-2"></p>
