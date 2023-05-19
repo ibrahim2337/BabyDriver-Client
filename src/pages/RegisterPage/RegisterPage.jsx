@@ -24,12 +24,12 @@ const RegisterPage = () => {
                 name="name"
                 id="name"
                 placeholder="Name"
-                className="w-full px-3 py-2 border rounded-md border-gray-700 bg-secondary text-neutral"
+                className="w-full px-3 py-2 border rounded-md border-gray-600 bg-secondary text-neutral"
               />
             </div>
             <div>
               <label htmlFor="email" className="block mb-2 text-sm">
-                Email address
+                Email address 
               </label>
               <input
                 type="email"
