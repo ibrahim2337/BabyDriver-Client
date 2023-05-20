@@ -10,11 +10,11 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import Blogs from "./components/Blogs/Blogs";
 import Contact from "./components/Contact/Contact";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
-import OurCategories from "./components/OurCategories/OurCategories";
 import ToyDetails from "./pages/ToyDetails/ToyDetails";
 import AllToys from "./pages/AllToys/AllToys";
 import AddToy from "./pages/AddToy/AddToy";
 import { Toaster } from "react-hot-toast";
+import AuthProvider from "./provider/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -74,7 +74,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
+    <AuthProvider>
     <Toaster position="top-center" />
     <RouterProvider router={router} />
+    </AuthProvider>
   </div>
 );

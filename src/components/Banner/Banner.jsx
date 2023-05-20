@@ -11,7 +11,7 @@ const Banner = () => {
             <div className="lg:max-w-lg">
               <h1 className="text-3xl font-semibold text-gray-800  lg:text-4xl">
                 Best place to choose <br></br> your{" "}
-                <span className="text-blue-500 ">Toys</span>
+                <span className="text-yellow-300 ">Toys</span>
               </h1>
 
               <p className="mt-3 text-gray-600 mb-5 ">
@@ -20,7 +20,7 @@ const Banner = () => {
                 perspiciatis optio.
               </p>
 
-              <Link to="/products" className="px-6 py-2 text-sm font-semibold rounded-md text-white bg-gradient-to-r from-gray-600 to-gray-400">
+              <Link to="/all-toys" className="px-6 py-2 text-sm font-semibold rounded-md text-white bg-gradient-to-r from-gray-600 to-gray-400">
                 Shop Now
               </Link>
             </div>

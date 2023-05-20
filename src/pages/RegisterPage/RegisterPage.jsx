@@ -1,15 +1,69 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const RegisterPage = () => {
+
+    const { signUp, profileUpdate } = useContext(AuthContext);
+    const [error, setError] = useState("");
+    const [accepted, setAccepted] = useState(false);
+    const navigate = useNavigate();
+  
+    const handleAccepted = (event) => {
+      setAccepted(event.target.checked);
+    };
+  
+    const handleSignUp = (event) => {
+      event.preventDefault();
+      const form = event.target;
+      const name = form.name.value;
+      const photo = form.photo.value;
+      const email = form.email.value;
+      const password = form.password.value;
+      const confirm = form.confirm.value;
+  
+      if (password !== confirm) {
+        setError("Password doesn't match");
+        return;
+      }
+      setError("");
+  
+      signUp(email, password)
+        .then((result) => {
+          const user = result.user;
+          console.log(user);
+          form.reset();
+          handleUserProfile(name, photo);
+          navigate("/login");
+          setError("");
+        })
+        .catch((error) => {
+          console.error(error);
+          setError(error.message);
+        });
+    };
+  
+    const handleUserProfile = (name, photo) => {
+      const profile = {
+        displayName: name,
+        photoURL: photo,
+      };
+  
+      profileUpdate(profile)
+        .then(() => {})
+        .catch((error) => console.error(error));
+    };
+  
+
     return (
+
         <div className="container mx-auto w-11/12 md:w-7/12 lg:w-5/12 my-8 p-8 mt-28 rounded-md sm:p-10 bg-secondary text-neutral bg-gray-300">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold">Register</h1>
         </div>
         <form
-          
+          onSubmit={handleSignUp}
           noValidate=""
           action=""
           className="space-y-12 ng-untouched ng-pristine ng-valid"
@@ -91,7 +145,7 @@ const RegisterPage = () => {
             <div className="flex items-center -mt-8">
               <input
                 type="checkbox"
-                
+                onClick={handleAccepted}
                 className="checkbox checkbox-neutral rounded cursor-pointer h-4 w-4 mr-2"
               />
               <span className="label-text pb-px">
@@ -104,7 +158,7 @@ const RegisterPage = () => {
   
             <div className="-mt-8">
               <button
-                
+                disabled={!accepted}
                 type="submit"
                 className="w-full px-8 py-3 font-semibold rounded-md text-white border-md rounded-b-md bg-gradient-to-r from-gray-600 to-gray-400 bg-neutral text-secondary disabled:opacity-70 disabled:cursor-not-allowed"
               >

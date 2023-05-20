@@ -28,22 +28,24 @@ const OurCategories = () => {
 
   return (
     <div>
-        <h3 className="text-3xl font-bold text-center mb-5">Explore our products</h3>
-      <div className="flex justify-center gap-8">
+      <h3 className="text-3xl font-bold text-center mb-10 mt-5">
+        Explore our products
+      </h3>
+      <div className="  flex justify-center gap-8">
         {categories.map((category, index) => (
           <p
             onClick={() => {
               handleCategory(category.toy_category),
                 setActiveCategories(category.toy_category);
             }}
-            className={`text-lg font-medium hover:underline cursor-pointer`}
+            className={`text-lg font-medium hover:cursor-pointer border px-5 py-2 rounded-md bg-yellow-200`}
             key={index}
           >
             {category.toy_category}
           </p>
         ))}
       </div>
-      <h2 className="container mx-auto  px-10 text-xl font-semibold tracking-wide">
+      <h2 className="container px-10 py-2 mx-auto mt-5 text-center text-2xl font-semibold tracking-wide ">
         {activeCategories}
       </h2>
       <div className="mt-5 container mx-auto  px-10 grid grid-cols-1 gap-5 lg:grid-cols-4 md:grid-cols-2 ">
