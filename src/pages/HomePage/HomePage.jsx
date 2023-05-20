@@ -3,15 +3,17 @@ import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Gallery from "../../components/Gallery/Gallery";
 import Category from "../../components/Category/Category";
-import ProductsPage from "../ProductsPage/ProductsPage";
+import OurCategories from "../../components/OurCategories/OurCategories";
+
 
 const HomePage = () => {
   return (
     <div>
       <Banner />
-      <ProductsPage />
       <Category />
+      <OurCategories />
       <Gallery />
+      
     </div>
   );
 };

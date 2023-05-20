@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CgClose } from "react-icons/cg";
 import { VscThreeBars } from "react-icons/vsc";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menus = [
-    { name: "Home", link: "/home" },
-    { name: "Products", link: "/products" },
+    { name: "Home", link: "/" },
+    { name: "All Toys", link: "/all-toys" },
     { name: "Contact", link: "/contact" },
+    { name: "Add Toy", link: "/add-toy" },
     { name: "Blog", link: "/blogs" },
   ];
   return (

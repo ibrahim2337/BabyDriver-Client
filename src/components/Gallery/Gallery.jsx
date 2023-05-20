@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <div className="container px-10 py-10 mx-auto">
       <h1 className="text-2xl font-bold text-center mb-16 capitalize lg:text-3xl ">
-        Our Car Toys Gallery
+        Our Toys Gallery
       </h1>
       <div>
         
