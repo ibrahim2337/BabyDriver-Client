@@ -9,7 +9,7 @@ const Blogs = () => {
         <h2 className="mt-20 lg:mt-28 mb-16 text-4xl font-bold leading-none text-center sm:text-5xl uppercase">
           Some Important Questions
         </h2>
-        <div className="grid gap-10 md:gap-8 sm:p-3 md:grid-cols-2 lg:px-12 xl:px-32">
+        <div className="grid grid-cols-1 gap-10 md:gap-8 sm:p-3 md:grid-cols-1 lg:grid-cols-2 lg:px-12 xl:px-32">
           <div className="p-8 border rounded-md bg-slate-300 hover:bg-slate-200 hover:scale-95 lg:hover:scale-105">
             <h3 className="font-bold text-lg">
               What is an access token and refresh token? How do they work and

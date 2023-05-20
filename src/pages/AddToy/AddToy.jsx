@@ -40,10 +40,10 @@ const AddToy = () => {
   };
 
   return (
-    <div className="py-10 mt-20 px-2">
+    <div className="py-10 mt-20 px-2 ">
       <form onSubmit={handleAddToy}>
-        <div className="bg-transparent min-h-screen md:px-20 pt-6">
-          <div className="border bg-transparent rounded-md lg:px-6 py-12 px-3 max-w-2xl mx-auto">
+        <div className="bg-transparent min-h-screen md:px-20 pt-6 ">
+          <div className="border bg-transparent rounded-md bg-slate-100 lg:px-6 py-12 px-3 max-w-2xl mx-auto ">
             <h1 className="text-center text-3xl font-medium mb-4">ADD A TOY</h1>
             <div className="space-y-4">
               <div>

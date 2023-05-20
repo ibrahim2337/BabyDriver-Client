@@ -46,7 +46,7 @@ const AllToys = () => {
             />
           </div>
 
-          <div className="mt-5 container mx-auto px-10 grid grid-cols-4 gap-5">
+          <div className="mt-5 container mx-auto px-10 grid grid-cols-1  gap-5 lg:grid-cols-4 md:grid-cols-2">
             {(filteredToys.length > 0 ? filteredToys : data).map((toy, index) => (
               <div key={index} className="max-w-xs p-6 rounded-md shadow-md border">
                 <img

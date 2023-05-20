@@ -46,7 +46,7 @@ const OurCategories = () => {
       <h2 className="container mx-auto  px-10 text-xl font-semibold tracking-wide">
         {activeCategories}
       </h2>
-      <div className="mt-5 container mx-auto  px-10 grid grid-cols-4 gap-5 ">
+      <div className="mt-5 container mx-auto  px-10 grid grid-cols-1 gap-5 lg:grid-cols-4 md:grid-cols-2 ">
         {categoryWiseToy.map((toy, index) => (
           <div key={index} className="max-w-xs p-6 rounded-md shadow-md border">
             <img
