@@ -42,7 +42,7 @@ const AllToys = () => {
               value={searchTerm}
               onChange={handleChange}
               onKeyDown={handleKeyDown}
-              className="border-2 w-full border-gray-300 bg-white h-10 px-5 pr-16 rounded-sm text-sm focus:outline-none"
+              className="border-2 w-full border-gray-300 bg-white h-10 px-5 pr-16 rounded-md text-sm focus:outline-none"
             />
           </div>
 

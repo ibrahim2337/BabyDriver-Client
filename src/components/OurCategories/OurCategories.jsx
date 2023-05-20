@@ -38,14 +38,14 @@ const OurCategories = () => {
               handleCategory(category.toy_category),
                 setActiveCategories(category.toy_category);
             }}
-            className={`text-lg font-medium hover:cursor-pointer border px-5 py-2 rounded-md bg-yellow-200`}
+            className={`text-lg font-medium hover:cursor-pointer border px-5 py-2 rounded-md bg-yellow-200 hover:bg-yellow-300`}
             key={index}
           >
             {category.toy_category}
           </p>
         ))}
       </div>
-      <h2 className="container px-10 py-2 mx-auto mt-5 text-center text-2xl font-semibold tracking-wide ">
+      <h2 className="container px-10 py-2 mx-auto mt-5 text-center text-2xl font-semibold ">
         {activeCategories}
       </h2>
       <div className="mt-5 container mx-auto  px-10 grid grid-cols-1 gap-5 lg:grid-cols-4 md:grid-cols-2 ">
@@ -64,7 +64,7 @@ const OurCategories = () => {
               <p className="text-gray-900">Rating: {toy.toy_rating}</p>
             </div>
             <Link to={`toy-details/${toy._id}`}>
-              <button className=" text-md px-3 py-1 font-medium text-cyan-50 border-md rounded-md  bg-gradient-to-r from-gray-600 to-gray-400 ">
+              <button className="text-md px-3 py-1 font-medium text-cyan-50 border-md rounded-md  bg-gradient-to-r from-gray-600 to-gray-400 ">
                 See Details
               </button>
             </Link>
