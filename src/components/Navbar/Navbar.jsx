@@ -10,8 +10,9 @@ const Navbar = () => {
   const menus = [
     { name: "Home", link: "/" },
     { name: "All Toys", link: "/all-toys" },
-    { name: "Contact", link: "/contact" },
     { name: "Add Toy", link: "/add-toy" },
+    { name: "My Toy", link: "/my-toy" },
+    { name: "Contact", link: "/contact" },
     { name: "Blog", link: "/blogs" },
   ];
   const { user, logOut } = useContext(AuthContext);

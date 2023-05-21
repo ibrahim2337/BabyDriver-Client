@@ -15,6 +15,7 @@ import AllToys from "./pages/AllToys/AllToys";
 import AddToy from "./pages/AddToy/AddToy";
 import { Toaster } from "react-hot-toast";
 import AuthProvider from "./provider/AuthProvider";
+import MyToy from "./pages/MyToy/MyToy";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/add-toy",
         element: <AddToy />,
+      },
+      {
+        path: "/my-toy",
+        element: <MyToy />,
       },
       {
         path: "/contact",

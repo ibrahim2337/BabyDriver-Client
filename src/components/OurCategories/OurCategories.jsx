@@ -38,7 +38,7 @@ const OurCategories = () => {
               handleCategory(category.toy_category),
                 setActiveCategories(category.toy_category);
             }}
-            className={`text-lg font-medium hover:cursor-pointer border px-5 py-2 rounded-md bg-yellow-200 hover:bg-yellow-300`}
+            className={`text-lg font-medium flex flex-col hover:cursor-pointer border px-5 py-2 rounded-md bg-yellow-200 hover:bg-yellow-300`}
             key={index}
           >
             {category.toy_category}

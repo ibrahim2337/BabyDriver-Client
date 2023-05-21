@@ -15,9 +15,7 @@ const Banner = () => {
               </h1>
 
               <p className="mt-3 text-gray-600 mb-5 ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                beatae error laborum ab amet sunt recusandae? Reiciendis natus
-                perspiciatis optio.
+              Endless fun and excitement with our toy collection, featuring innovative designs and interactive play experiences. Experience joy and creativity as you embark on imaginative adventures with our diverse range of toys.
               </p>
 
               <Link to="/all-toys" className="px-6 py-2 text-sm font-semibold rounded-md text-white bg-gradient-to-r from-gray-600 to-gray-400">

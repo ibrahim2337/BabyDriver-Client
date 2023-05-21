@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import toast from "react-hot-toast";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const AddToy = () => {
+  const { user } = useContext(AuthContext);
+
   const handleAddToy = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -13,6 +17,8 @@ const AddToy = () => {
     const description = form.description.value;
 
     const toyData = {
+      user_name: user?.displayName,
+      user_email: user?.email,
       toy_name: title,
       toy_img: img,
       toy_category: category,
@@ -34,7 +40,7 @@ const AddToy = () => {
         console.log(data);
         if (data.insertedId) {
           toast.success("Toy Added Successfully");
-          form.reset()
+          form.reset();
         }
       });
   };
@@ -109,8 +115,6 @@ const AddToy = () => {
                     className="w-full bg-transparent outline-none py-1 px-2 text-md border  rounded-sm"
                     required
                   />
-
-                  
                 </div>
                 <div className="w-5/12">
                   <label htmlFor="email" className="text-lg ">

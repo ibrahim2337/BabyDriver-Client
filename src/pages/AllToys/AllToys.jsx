@@ -47,27 +47,32 @@ const AllToys = () => {
           </div>
 
           <div className="mt-5 container mx-auto px-10 grid grid-cols-1  gap-5 lg:grid-cols-4 md:grid-cols-2">
-            {(filteredToys.length > 0 ? filteredToys : data).map((toy, index) => (
-              <div key={index} className="max-w-xs p-6 rounded-md shadow-md border">
-                <img
-                  src={toy.toy_img}
-                  alt=""
-                  className="w-full h-auto rounded-t-md bg-gray-500"
-                />
-                <div className="mt-6 mb-2 h-32">
-                  <h2 className="text-md font-semibold tracking-wide">
-                    {toy.toy_name}
-                  </h2>
-                  <p className="text-gray-900">Price: {toy.toy_price}</p>
-                  <p className="text-gray-900">Rating: {toy.toy_rating}</p>
+            {(filteredToys.length > 0 ? filteredToys : data).map(
+              (toy, index) => (
+                <div
+                  key={index}
+                  className="max-w-xs p-6 rounded-md shadow-md border"
+                >
+                  <img
+                    src={toy.toy_img}
+                    alt=""
+                    className="w-full h-auto rounded-t-md bg-gray-500"
+                  />
+                  <div className="mt-6 mb-2 h-32">
+                    <h2 className="text-md font-semibold tracking-wide">
+                      {toy.toy_name}
+                    </h2>
+                    <p className="text-gray-900">Price: {toy.toy_price}</p>
+                    <p className="text-gray-900">Rating: {toy.toy_rating}</p>
+                  </div>
+                  <Link to={`toy-details/${toy._id}`}>
+                    <button className="text-md px-3 py-1 font-medium text-cyan-50 border-md rounded-md bg-gradient-to-r from-gray-600 to-gray-400">
+                      See Details
+                    </button>
+                  </Link>
                 </div>
-                <Link to={`toy-details/${toy._id}`}>
-                  <button className="text-md px-3 py-1 font-medium text-cyan-50 border-md rounded-md bg-gradient-to-r from-gray-600 to-gray-400">
-                    See Details
-                  </button>
-                </Link>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </>
       )}
