@@ -19,9 +19,9 @@ const Footer = () => {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-white">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+              A world of endless play possibilities on our toy website. Find joy and excitement with our wide selection of toys for all ages and interests.
               </p>
+              
             </div>
           </div>
           <div className="space-y-2 text-sm">

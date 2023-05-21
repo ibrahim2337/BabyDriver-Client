@@ -8,7 +8,7 @@ const Category = () => {
         <div className="text-center p-4 space-x-4 rounded-lg md:space-x-6    bg-gradient-to-r from-gray-600 to-gray-400 ">
           <div className="flex flex-col justify-center align-middle">
             <p className="text-3xl font-semibold leading-none text-white">
-              200
+              200+
             </p>
             <p className="capitalize font-semibold text-white">Products</p>
           </div>
